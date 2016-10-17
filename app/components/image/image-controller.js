@@ -1,5 +1,16 @@
-(function(){
-	
-	//Your ImageService is a global constructor function what can you do here if you new it up?
-	
-}())
+(function () {
+	let ic = this
+	let imageService = new ImageService();
+
+	let backGround = []
+	imageService.getImage(function (image) {
+		image = JSON.parse(image)
+		pic = image.url
+		loadBackground(pic)
+
+	})
+	function loadBackground(pic) {
+		$("#body").css({ "background-image": `url(${pic})`, "background-size": "cover", "background-repeat": "no-repeat" });
+
+	}
+} ())

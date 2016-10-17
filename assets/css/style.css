@@ -1,0 +1,75 @@
+
+  /**{outline:1px solid red;}*/
+
+body{
+     color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    justify-content: space-around;
+  /*justify-content: space-around;*/
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-shadow: 0px -1px 10px rgba(255, 255, 255, 1);
+ }
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    }
+.weather-container{
+     color: black;
+         flex-direction: column;
+       justify-content: space-around;
+    text-align: center;
+    }
+h2{
+    color: black;
+    text-align: center;
+}
+p{
+    color: black;
+    text-align: center;
+}
+.ticker{
+    display: inline-flex;
+    justify-content: center;
+text-align: center;
+-webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+.add-todo {
+    opacity: 0.8;
+}
+.list-group-item {
+    background: transparent;
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+}
+#todo-list:hover {
+    cursor: pointer;
+}
+.crossed-out {
+    text-decoration: line-through;
+}
+.todo-check {
+    float: left;
+}
+.glyphicon-ok {
+    color: darkgreen;
+}
+.glyphicon-remove {
+    color: darkred;
+}
+.todo-remove {
+    float: right;
+}

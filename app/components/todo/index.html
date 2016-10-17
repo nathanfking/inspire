@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inspire</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body id="body">
+
+    <div class="weather-container" id="weather">
+        <img src="{{cloudy}}" aria-hidden="true">
+        <h1>{{boise}}</h1>
+        <h3>{{tempf}}F</h3>
+        <h3>{{tempc}}C</h3>
+        <h5>{{sky}}</h5>
+    </div>
+    <div id="quote">
+        <h2>{{author}}</h2>
+        <p>{{quote}}</p>
+    </div>
+
+    <div id="todo">
+        <div class="input-group add-todo">
+            <span class="input-group-addon" id="todo-count"></span>
+            <input type="text" class="form-control" id="new-todo" placeholder="New Task">
+            <span class="input-group-btn"><button class="btn btn-primary add-btn" type="button">Add</button></span>
+        </div>
+        <ul id="todo-list" class="list-group"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="app/init.js"></script>
+    <script src="app/components/weather/weather-service.js"></script>
+    <script src="app/components/image/image-service.js"></script>
+    <script src="app/components/quote/quote-service.js"></script>
+    <script src="app/components/todo/todo-service.js"></script>
+    <!--Load your scripts below-->
+    <script src="app/components/weather/weather-controller.js"></script>
+    <script src="app/components/image/image-controller.js"></script>
+    <script src="app/components/quote/quote-controller.js"></script>
+    <script src="app/components/todo/todo-controller.js"></script>
+</body>
+</html>
+
