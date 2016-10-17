@@ -38,11 +38,13 @@ $(document).ready(function () {
 				return;
 			}
 		}
+		todoService.saveTodos(myTodos);
 	}
 
 	function removeTask(i) {
 		myTodos.splice(i, 1);
 		addMyTodos(myTodos);
+		todoService.saveTodos(myTodos);
 	}
 
 	$('.add-btn').on('click', function () {
