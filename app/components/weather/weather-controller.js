@@ -10,7 +10,7 @@
                 console.log(weather)
         })
         function lookOutWindow(weather) {
-                var icon = 'http://openweathermap.org/img/w/' + weather.weather[0].icon + '.png';
+                var icon = 'https://openweathermap.org/img/w/' + weather.weather[0].icon + '.png';
                 var place = weather.name
                 var ferTemp = parseInt(weather.main.temp)
                 var condition = weather.weather[0].description
