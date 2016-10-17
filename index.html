@@ -1,18 +1,18 @@
 ﻿<html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1  user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1  user-scalable=no">
 	<!--<meta charset="UTF-8">-->
 	<title>Inspire</title>
-	
-    <link rel="stylesheet" href="assets/css/style.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css">
-	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
 <!--<div class="container">-->
+
 <body id="body">
 	<div class="row">
 		<div class="weather-container col-lg-6 col-xs-12" id="weather">
@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div id="quote" class"quote-container col-lg-12 col-xs-12">
+		<div id="quote" class "quote-container col-lg-12 col-xs-12">
 			<h2>{{author}}</h2>
 			<p>{{quote}}</p>
 		</div>
@@ -40,16 +40,16 @@
 			<ul id="todo-list" class="list-group"></ul>
 		</div>
 	</div>
-    <!--</div>-->
+	<!--</div>-->
 
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<!--<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
-	<script src="app/init.js"></script>
 	<script src="app/components/weather/weather-service.js"></script>
 	<script src="app/components/image/image-service.js"></script>
 	<script src="app/components/quote/quote-service.js"></script>
 	<script src="app/components/todo/todo-service.js"></script>
-	<!--Load your scripts below-->
 	<script src="app/components/weather/weather-controller.js"></script>
 	<script src="app/components/image/image-controller.js"></script>
 	<script src="app/components/quote/quote-controller.js"></script>
@@ -58,7 +58,8 @@
 	var clock = $('.clock').FlipClock({
 		clockFace: 'TwentyFourHourClock'
 	});
-</script>
+    </script>
+    <script src="app/init.js"></script>
 </body>
 
 </html>
